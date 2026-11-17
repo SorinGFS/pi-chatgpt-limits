@@ -1,0 +1,33 @@
+{
+  "name": "pi-chatgpt-limits",
+  "version": "1.0.1",
+  "description": "Pi Status to display ChatGPT subscription limits and trigger resets.",
+  "keywords": [
+    "chatgpt-status",
+    "chatgpt-reset-limits"
+  ],
+  "homepage": "https://github.com/SorinGFS/pi-chatgpt-limits#readme",
+  "bugs": {
+    "url": "https://github.com/SorinGFS/pi-chatgpt-limits/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SorinGFS/pi-chatgpt-limits.git"
+  },
+  "license": "MIT",
+  "author": "SorinGFS",
+  "type": "module",
+  "pi": {
+    "extensions": [
+      "extensions/chatgpt-limits.js",
+      "extensions/codex-reset.js"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
